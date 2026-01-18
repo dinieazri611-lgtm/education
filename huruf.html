@@ -29,7 +29,7 @@
 </div>
 
 <main class="huruf">
-  <section class="alphabet-grid">
+  <section class="alphabet-grid" id="main">
     <div class="card"><h2>A</h2><p>Ayam</p><img src="ayam.jpeg"></div>
     <div class="card"><h2>B</h2><p>Bola</p><img src="bola.jpeg"></div>
     <div class="card"><h2>C</h2><p>Cawan</p><img src="cawan.jpeg"></div>
@@ -62,10 +62,26 @@
 <audio autoplay loop>
   <source src="musicbg.webm" type="audio/mpeg">
 </audio>
+<a href="#main" class="bookmark-btn" title="Back to Top">⬆️</a>
+
+  <script>
+  const music = document.getElementById("bgMusic");
+  let isPlaying = true;
+
+  function toggleMusic() {
+    if (isPlaying) {
+      music.pause();
+    } else {
+      music.play();
+    }
+    isPlaying = !isPlaying;
+  }
+</script>
 
   <footer>
     <p>&copy; 2026 EduVerse. Hak Cipta Terpelihara.</p>
   </footer>
 
 </body>
+
 </html>
