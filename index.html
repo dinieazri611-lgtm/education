@@ -1,0 +1,124 @@
+<html>
+<head>
+
+<title>Homepage</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap" rel="stylesheet">
+
+<body>
+ <header>
+    <div class="header-container">
+    <div class="logo">EduVerse</div>
+      <nav>
+        <ul>
+          <li><a href="homepage.html">Laman Utama</a></li>
+          <li><a href="huruf.html">Kenali Abjad</a></li>
+          <li><a href="Perkataan.html">Perkataan & Ayat</a></li>
+          <li><a href="kuiz.html">Kuiz</a></li>
+        <li><a href="video.html">Video</a></li>
+        </ul>
+      </nav>
+    </div>
+</div>
+  </header>
+  
+  <section class="main" id="main">
+    <h1>Selamat Datang ke EduVerse</h1>
+    <p> Platfrom pembelajaran awal bahasa melayu secara alam maya. </p>
+  </section>
+
+
+
+    <section class="section cartoon">
+  <div class="section-title">
+    <h2>Explore More 🎈</h2>
+  </div>
+
+  <div class="kursus-container">
+
+    <div class="box">
+      <h3>KENALI ABJAD</h3>
+      <img src="kenalihuruf.jpeg" alt="Huruf">
+      <a href="huruf.html" class="arrow-btn">➜</a>
+    </div>
+
+    <div class="box">
+      <h3>PERKATAAN & AYAT</h3>
+      <img src="AYAT.png" alt="Perkataan">
+      <a href="perkataan.html" class="arrow-btn">➜</a>
+    </div>
+
+    <div class="box">
+      <h3>KUIZ</h3>
+      <img src="quiz.jpeg" alt="Kuiz">
+      <a href="kuiz.html" class="arrow-btn">➜</a>
+    </div>
+
+    <div class="box">
+      <h3>VIDEO</h3>
+      <video autoplay muted loop>
+        <source src="video.mp4" type="video/mp4">
+      </video>
+      <a href="video.html" class="arrow-btn">➜</a>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<section class="contact">
+  <div class="section-title">
+    <h2>Contact Us &#128383;</h2>
+  </div>
+
+  <ul class="contact-list">
+   <li>
+      <i class="fab fa-instagram"></i>
+      : EduVerse
+   </li>
+<li>
+      <i class="fas fa-phone"></i>
+      : 011 29931124
+ </li>
+<li>
+      <i class="fas fa-envelope"></i>
+      : EduVerse@gmail.com
+ </li>
+  </ul>
+</section>
+
+ 
+<a href="#main" class="bookmark-btn" title="Back to Top">⬆️</a>
+
+
+  <footer>
+    <p>&copy; 2026 EduVerse. Hak Cipta Terpelihara.</p>
+    <div class="footer-date" id="footer-date"></div>
+  </footer>
+
+<script>
+  const footerDate = document.getElementById("footer-date");
+
+  function updateFooterDate() {
+    const today = new Date();
+
+    const days = ["Ahad","Isnin","Selasa","Rabu","Khamis","Jumaat","Sabtu"];
+    const months = ["Jan","Feb","Mac","Apr","Mei","Jun","Jul","Ogos","Sep","Okt","Nov","Dis"];
+
+    const dayName = days[today.getDay()];
+    const date = today.getDate();
+    const monthName = months[today.getMonth()];
+    const year = today.getFullYear();
+
+    footerDate.textContent = `${dayName}, ${date} ${monthName} ${year}`;
+  }
+
+  updateFooterDate();
+  setInterval(updateFooterDate, 1000*60); // update setiap 1 minit
+</script>
+
+</body>
+</html>
