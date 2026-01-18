@@ -999,6 +999,29 @@ body {
   padding: 10px;
 }
 
+.music-btn {
+  position: fixed;
+  bottom: 125px;   
+  right: 46px;    
+  
+  background: #ff914d;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 76px;
+  height: 80px;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  z-index: 9999;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.music-btn:hover {
+  transform: scale(1.1);
+  background: #ff7a2f;
+}
+   
 
 
 
