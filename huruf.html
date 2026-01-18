@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>Pembelajaran Abjad | EduVerse</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="abjad">
+
+<header>
+  <div class="header-container">
+    <div class="logo">EduVerse</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Laman Utama</a></li>
+        <li><a href="huruf.html">Kenali Abjad</a></li>
+        <li><a href="perkataan.html">Perkataan & Ayat</a></li>
+        <li><a href="kuiz.html">Kuiz</a></li>
+        <li><a href="video.html">Video</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<div class="page-header">
+  <h1>Bandar Abjad Ceria 🦊🐰</h1>
+  <p>Jom Belajar Abjad Bahasa Melayu!!!</p>
+</div>
+
+
+<main class="huruf">
+  <section class="alphabet-grid" id="main">
+    <div class="card"><h2>A</h2><p>Ayam</p><img src="ayam.jpeg"></div>
+    <div class="card"><h2>B</h2><p>Bola</p><img src="bola.jpeg"></div>
+    <div class="card"><h2>C</h2><p>Cawan</p><img src="cawan.jpeg"></div>
+    <div class="card"><h2>D</h2><p>Daun</p><img src="daun.jpeg"></div>
+    <div class="card"><h2>E</h2><p>Epal</p><img src="epal.jpeg"></div>
+    <div class="card"><h2>F</h2><p>Flamingo</p><img src="flaminggo.jpeg"></div>
+    <div class="card"><h2>G</h2><p>Gigi</p><img src="gigi.jpeg"></div>
+    <div class="card"><h2>H</h2><p>Harimau</p><img src="harimau.jpeg"></div>
+    <div class="card"><h2>I</h2><p>Ikan</p><img src="ikan.jpeg"></div>
+    <div class="card"><h2>J</h2><p>Jagung</p><img src="jagung.jpeg"></div>
+    <div class="card"><h2>K</h2><p>Kucing</p><img src="kucing.jpeg"></div>
+    <div class="card"><h2>L</h2><p>Landak</p><img src="landak.jpeg"></div>
+    <div class="card"><h2>M</h2><p>Monyet</p><img src="monyet2.jpeg"></div>
+    <div class="card"><h2>N</h2><p>Nasi</p><img src="nasi.jpeg"></div>
+    <div class="card"><h2>O</h2><p>Oren</p><img src="oren.jpeg"></div>
+    <div class="card"><h2>P</h2><p>Panda</p><img src="panda.jpeg"></div>
+    <div class="card"><h2>Q</h2><p>Quran</p><img src="quran.jpeg"></div>
+    <div class="card"><h2>R</h2><p>Rusa</p><img src="rusa.jpeg"></div>
+    <div class="card"><h2>S</h2><p>Singa</p><img src="singa.jpeg"></div>
+    <div class="card"><h2>T</h2><p>Tupai</p><img src="tupai.jpeg"></div>
+    <div class="card"><h2>U</h2><p>Ular</p><img src="ular.jpeg"></div>
+    <div class="card"><h2>V</h2><p>Van</p><img src="van.jpeg"></div>
+    <div class="card"><h2>W</h2><p>Wau</p><img src="wau.jpeg"></div>
+    <div class="card"><h2>X</h2><p>X-ray</p><img src="xray.jpeg"></div>
+    <div class="card"><h2>Y</h2><p>Yoyo</p><img src="yoyo.jpeg"></div>
+    <div class="card"><h2>Z</h2><p>Zebra</p><img src="zebra.jpeg"></div>
+
+
+  </section>
+</main>
+
+<audio id="bgMusic" autoplay loop>
+  <source src="musicbg.webm" type="audio/mpeg">
+</audio>
+
+<button class="music-btn" onclick="toggleMusic()">
+  <i class="fas fa-music"></i>
+</button>
+
+
+<a href="#main" class="bookmark-btn" title="Back to Top">⬆️</a>
+
+<script>
+  const music = document.getElementById("bgMusic");
+  let isPlaying = true;
+
+  function toggleMusic() {
+    if (isPlaying) {
+      music.pause();
+    } else {
+      music.play();
+    }
+    isPlaying = !isPlaying;
+  }
+</script>
+
+  <footer>
+    <p>&copy; 2026 EduVerse. Hak Cipta Terpelihara.</p>
+  </footer>
+
+</body>
+</html>
